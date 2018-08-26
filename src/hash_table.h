@@ -1,0 +1,17 @@
+// hash_table.h
+
+#include <stdlib.h>
+#include <string.h>
+#include "hash_table.h"
+
+typedef struct {
+    char* key;
+    char* value;
+} ht_item;
+
+typedef struct {
+    int size;
+    int count;
+    ht_item** items;
+} ht_hash_table;
+
